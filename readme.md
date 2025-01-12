@@ -1,14 +1,14 @@
 # CoderDojo Python setup
 
 Het doel van deze instructie is om het gebruik van Python voor onze Ninjas eenvoudiger te maken door ervoor te zorgen dat
-alle libraries vooraf zijn geinstalleerd en dat ze werken in Thonny en in VS Code. Hierdoor kunnen we Phyton aanbieden aan
+alle libraries vooraf zijn geinstalleerd en dat ze werken in Thonny en in VS Code. Hierdoor kunnen we Python aanbieden aan
 beginnende en gevorderde Ninjas.
 
 Uitgangspunten:
 
 - Ninjas moeten kunnen werken in Thonny
 - Ninjas moeten kunnen werken in VS Code
-- Libraries moeten vooraf geinstalleerd zijn zodat Ninjas direct kunnen beginnen met de opdracht.
+- Libraries moeten vooraf geinstalleerd zijn zodat Ninjas direct kunnen beginnen met een opdracht.
 - P5 moet worden ondersteund.
 
 ## Samenvatting installatie
@@ -20,9 +20,20 @@ In de opties van Thonny wordt aangegeven dat deze de globale pyton installatie m
 
 Tenslotte worden de libraries die zijn opgelijst in het bestand requirements.txt geinstalleerd.
 
-Het is de bedoeling dat wij als mentoren het bestand requirements.txt up-to-date houden met wat nadig is voor de opdrachten.
+Het is de bedoeling dat wij als mentoren het bestand requirements.txt up-to-date houden met wat nodig is voor de opdrachten.
 Dit kan bijvoorbeeld door requirements.txt op een gedeelde locatie te zetten. Bijvoorbeeld GIT.
 
+Op dit moment wordt deze instructie beheerd in GIT [cdz-python-setup](https://github.com/BenMens/cdz-python-setup)
+
+## Install cdz-python-setup op een laptop
+
+Creeer de folder C:\Users\Ninja\Documents\Python
+
+Open een command shell en start het commando:
+
+```cmd
+  git clone https://github.com/BenMens/cdz-python-setup
+```
 
 ## Install python 3.10.11
 
@@ -45,6 +56,7 @@ Install plugins
 - Pylance
 - Python
 - Python debugger
+- Black Formatter
 
 ## Installatie Thonny
 
@@ -64,9 +76,18 @@ Zorg ervoor dat Thonny dezelfde Python installatie gebruikt als VS Code:
 
   C:\Users\Ninja\AppData\Local\Programs\Python\Python310\python.exe
 
-
-
 ## installing requirements.txt
+
+De libraries die zijn opgelijst in requirements.txt moeten worden geinstalleerd met het onderstaande commando.
+Dit commando haalt eerst de laaste versie op uit het GIT project en installeerd de libraries.
+
+```cmd
+  C:\Users\Ninja\Documents\Python\cdz-python-setup> install_libraries.cmd
+```
+
+## Achtegrond informatie
+
+### installing requirements.txt
 
 Het bestand requirements.txt bevat een lijst van alle libraries die onze Ninjas nodig hebben voor het maken van opdrachten.
 Deze libraries kunnen met één commando worden geinstalleerd.
@@ -77,7 +98,7 @@ Open een command shell en run:
     pip install -r <path naar requirements>\requirements.txt 
 ```
 
-## creating requirements.txt
+### creating requirements.txt
 
 Als er voor nieuwe opdrachten aanvullende libraries nodig zijn, dan moet requirements.txt worden bijgewerkt.
 Dit kan door eerst de benodigde libraries te installeren met **pip install ...**

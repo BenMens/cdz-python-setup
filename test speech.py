@@ -1,5 +1,6 @@
 import speech_recognition as sr
 
+
 def herken_stem() -> str:
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -12,5 +13,6 @@ def herken_stem() -> str:
                 return text.lower()
             except:
                 print("Couldn't hear you, please try again.")
+
 
 herken_stem()
