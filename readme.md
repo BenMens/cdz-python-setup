@@ -76,7 +76,7 @@ Zorg ervoor dat Thonny dezelfde Python installatie gebruikt als VS Code:
 
   C:\Users\Ninja\AppData\Local\Programs\Python\Python310\python.exe
 
-## installing requirements.txt
+## Installing requirements.txt
 
 De libraries die zijn opgelijst in requirements.txt moeten worden geinstalleerd met het onderstaande commando.
 Dit commando haalt eerst de laaste versie op uit het GIT project en installeerd de libraries.
@@ -87,7 +87,7 @@ Dit commando haalt eerst de laaste versie op uit het GIT project en installeerd 
 
 ## Achtegrond informatie
 
-### installing requirements.txt
+### Installing requirements.txt
 
 Het bestand requirements.txt bevat een lijst van alle libraries die onze Ninjas nodig hebben voor het maken van opdrachten.
 Deze libraries kunnen met één commando worden geinstalleerd.
@@ -98,12 +98,12 @@ Open een command shell en run:
     pip install -r <path naar requirements>\requirements.txt 
 ```
 
-### creating requirements.txt
+### Updating requirements.txt
 
 Als er voor nieuwe opdrachten aanvullende libraries nodig zijn, dan moet requirements.txt worden bijgewerkt.
-Dit kan door eerst de benodigde libraries te installeren met **pip install ...**
-Daarna kan het bestand requirements.txt worden gegenereerd met het commando:
+Dit kan door eerst de benodigde libraries te toe te voegen aan requirements.txt. Daarna kan update worden geinstalleerd
+met het commando:
 
 ```cmd
-    pip freeze > requirements.txt
+    pip install -r <path naar requirements>\requirements.txt 
 ```
